@@ -1,0 +1,219 @@
+/* @font-face
+{
+    font-family: 'Hanken Grotesk Thin';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+} */
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    /* font-family: 'Hanken Grotesk Thin', sans-serif; */
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: rgb(240,240,240);
+}
+
+.container
+{
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+    height: 450px;
+    width: 1000px;
+    width: 680px;
+    width: 695px;
+    border-radius: 30px;
+}
+
+.result
+{
+    background: linear-gradient(to bottom, #6340F9, #392DEC);
+    border-radius: 30px;
+    padding: 30px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+
+}
+
+.result h3
+{
+    color: #D0C7FF;
+    margin-bottom: 30px;
+}
+
+.result .circle
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #432EE3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.circle p:first-child
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.circle p:last-child
+{
+    color: #D0C7FF;
+}
+
+.result .result-footer
+{
+    margin-top: 30px;
+}
+
+.result .result-footer p:first-child
+{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.result .result-footer p:last-child
+{
+    color: #D0C7FF;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.summary
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 40px;
+
+}
+
+.summary .values
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    width: 315px;
+}
+
+.summary .values .reaction
+{
+    background-color: rgb(229, 140, 140, 20%);
+    color: rgb(194 47 47);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.summary .values .memory
+{
+    background-color: #FFFBF3;
+    color: rgb(255,178,30);
+    border-radius: 10px;
+    padding: 15px;
+}
+.summary .values .verbal
+{
+    background-color: #F2FCF9;
+    color: rgb(0,187,143);
+    border-radius: 10px;
+    padding: 15px;
+}
+.summary .values .visual
+{
+    background-color: #F3F4FD;
+    color: #1125D9;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.summary .values img
+{
+    margin: -4px 4px -4px 0px;
+}
+
+.summary .values p
+{
+    display: inline-block;
+}
+
+.summary .values .child1
+{
+    width: 65%;
+}
+
+.summary .values .child2
+{
+    color: black;
+    opacity: 0.8;
+}
+
+.summary .values .child3
+{
+    color: black;
+    opacity: 0.5;
+}
+
+.summary a
+{
+    background-color: #303B59;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+
+
+}
+
+@media (max-width: 768px)
+{
+    .container
+    {
+        width: 350px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .result
+    {
+        width: auto;
+        height: auto;
+    }
+
+    .summary
+    {
+       padding: 20px 20px;
+    }
+
+    .summary .values
+    {
+        width: auto;
+    }
+
+    .summary .values .child1
+    {
+        width: 63%;
+    }
+
+}
