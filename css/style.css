@@ -1,8 +1,20 @@
 /* @font-face
 {
-    font-family: 'Hanken Grotesk Thin';
-    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 } */
+
+@font-face
+{
+    font-family: 'hanken_groteskregular';
+    src: url('../assets/fonts/hanken_groteskregular/hankengrotesk-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../assets/fonts/hanken_groteskregular/hankengrotesk-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 *
 {
@@ -13,8 +25,9 @@
 
 body
 {
-    /* font-family: 'Hanken Grotesk Thin', sans-serif; */
-    font-family: 'Hanken Grotesk', sans-serif;
+    /* font-family: 'Hanken Grotesk', sans-serif; */
+    /* font-family: 'HankenGrotesk', sans-serif; */
+    font-family: 'hanken_groteskregular', sans-serif;
     background-color: rgb(240,240,240);
 }
 
@@ -157,7 +170,7 @@ body
 
 .summary .values .child1
 {
-    width: 65%;
+    width: 64%;
 }
 
 .summary .values .child2
